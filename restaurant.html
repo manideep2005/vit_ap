@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+        }
+        .toolbar {
+            background-color: #0c0c0c; /* Adjust as needed */
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            color: black;
+        }
+        .sticky-top {
+            top: 40px;
+           color: black;
+        }
+        
+
+    </style>
+    <style>
+          /* Custom CSS styles */
+          .toolbar {
+            background-color: #060606; /* Adjust as needed */
+            padding: 10px 0;
+        }
+        .sticky-top {
+            top: 00px;
+            background-color: #313335; 
+        }
+    </style>
+        
+    </style>
+    <style>
+        .card {
+            height: 100%;
+            background-color: black;
+        }
+
+        .card-img-top {
+            height: 190px; 
+            object-fit: cover;
+        }
+
+        .card-body {
+            height: 170px; 
+            background-color: black;
+            color: orange;
+            font-size: 0.4em;
+            
+        }
+
+        .btn-explore {
+            padding: 5px 10px; 
+            color: rgb(15, 16, 15);
+        }
+        
+    </style>
+   
+  <style>
+    .box {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-bottom: 30px; 
+            padding: 30px;
+
+    }
+</style>
+<style>
+     .row-eq-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row-eq-height .card {
+            flex: 1;
+            margin-bottom: 15px; 
+        }
+</style>
+<style>
+
+      
+        .scrollable {
+            height: 400px; 
+            overflow-y: auto;
+        }
+
+        /* Fade-in effect */
+        .fade-in {
+            opacity: 1;
+        }
+
+        /* Sticky Navigation Bar */
+        .sticky-top {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10;
+            z-index: 1020;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+        .dancing-script-unique {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 50px;
+            color: rgb(255, 119, 0); 
+            margin-top: 20px;
+            text-align: left; 
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p class="dancing-script-unique">GMK Restaurant</p>
+      </div>
+   
+    <div class="container mt-5 ">
+        <div class="row justify-content-end mt-3 nav-links">
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-search"></i> Search</span>
+            </div>
+            <div class="col-auto">
+                <div class="dropdown">
+                    <span class="text-primary me-2 dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quick Links
+                    </span>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonLight">
+                        <li><a class="dropdown-item" href="#">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="Signin.html">Sign in</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-bag"></i>Cart </span>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-question"></i> Help</span>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MENU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" style="color: black;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#starters">Starters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-course">Main Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biriyanis">Biriyanis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desserts">Desserts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soups">Soups</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class = "dancing-script-unique">
+        <div class="row row-eq-height" style="margin-bottom: 30px;">
+            <div class="col">
+                <h1 style="color: orange;">Starters</h1>
+
+                <div class = "box">
+                <div class="row">
+                    
+                    <div id="starters" class="container">
+                       
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-12 col-lg-3">
+                                <div class="card fade-in">
+                                    <img src="photos/veg.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="card-title"> Veg Starters</h2>
+                                        <p class="card-text">Refreshing cucumber and mint raita, a perfect accompaniment </p>
+
+                                        <button class="btn btn-warning btn-block"><a href="Veg_starters.html"  style="color: rgb(8, 8, 8); text-decoration: none;">Explore</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/egg starters.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Egg starters</h2>
+                        <p class = "card-text">Crispy egg rolls filled with a savory mixture of vegetables and spices</p>
+                        <button class="btn btn-warning btn-block"><a href="eggstarter.html"  style="color: rgb(12, 11, 11); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/non veg.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Chicken starters</h2>
+                           <p class = "card-text">Succulent chicken tikka, marinated and spices, grilled to perfection</p>
+                              
+                                <button class="btn btn-warning btn-block"><a href="nv_starters.html"  style="color: rgb(21, 21, 21); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/sea food.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Fish starters</h2>
+                          <p class = "card-text">Juicy prawn cocktail, served with a tangy cocktail sauce for a burst of </p>
+                          <button class="btn btn-warning btn-block"><a href="fish.html"  style="color: rgb(12, 12, 12); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-eq-height" style="margin-bottom: 30px;">
+            <div class="col">
+                <h1 style="color: orange;">Main Course</h1>
+                <div class = "box">
+                <div class="row">
+                    
+                    <div id="main-course" class="container">
+                    
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-12 col-lg-3">
+                                <div class="card fade-in">
+                                    <img src="photos/panner .jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Veg Curries</h2>
+                                        <p class="card-text">
+                                            Aromatic spices dancing in harmony.</p>
+                                        <button class="btn btn-warning btn-explore">Explore</button>
+                                    </div>
+                                </div>
+                            </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/egg curry.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Egg Curries</h2>
+                                <p class="card-text">Soft-boiled eggs, gently cooked to perfection
+                                   
+                                   .</p>
+                        
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/chicken curry.webp" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Non-veg Curries</h2>
+                                <p class="card-text">Juicy chicken pieces, cooked to perfection
+                               
+                                    .</p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/fish.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Fish Curries</h2>
+                                <p class = "card-text">A symphony of flavors that transports you to coastal shores</p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-eq-height" style="margin-bottom: 30px;"></div>
+            <div class="col">
+                <h1 style="color: orange;">Biriyanis</h1>
+                <div class = "box">
+                    <div id="biriyanis" class="container">
+                <div class="row">
+            
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/veg bityani.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Veg Biriyanis</h2>
+                                <p class="card-text">Veggie delight in every bite!
+                                    Aromatic veggie goodness.</p>
+                        
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/egg biriyani.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Egg Biriyanis</h2>
+                                <p class="card-text"> Egg-cellent flavors await!
+                                    Eggs meet spice perfection.
+                                 </p>
+                                
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/nv biriyani.avif" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Non-veg Biriyani</h2>
+                                <p class = "card-text" >
+                                    Chicken-y goodness.
+                                    Chicken meets spice perfection.
+                                </p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/fish biriyani.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Fish Biriyanis</h2>
+                                <p class = "card-text">
+                                    Fish-y goodness.
+                                    Fish meets spice perfection.
+                                </p>
+                              
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col">
+                <h1 style="color: orange;">soups</h1>
+                <div class = "box">
+                    <div id="soups" class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/veg soup.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Veg Soups</h2>
+                                <p class = "card-text">Creamy tomato soup, made with ripe tomatoes and a hint </p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/egg soups.webp" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Egg soups</h2>
+                                <p class = "card-text">Silky strands of beaten eggs floating in a clear, savory broth</p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/nv soup.jpeg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Non-Veg Soups</h2>
+                                <p class = "card-text">Chicken noodle soup, brimming with tender chicken, </p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/sea food soup.webp" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Fish Soups</h2>
+                           <p class = "card-text">Spicy shrimp and corn soup, a tantalizing blend</p>
+                                <button class="btn btn-warning btn-explore">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <div class="row" style="margin-bottom: 30px; margin-top: 50px;">
+                        <div class="col">
+                            <h1 style="color: orange;">soups</h1>
+                            <div class = "box">
+                                <div id="soups" class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/mocktauls.jpg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Mocktails</h2>
+                                <p class="card-text">Refreshing mojito with mint, lime, and soda water</p>
+                                <button class="btn btn-warning btn-block"><a href="mocktails.html" style="color: rgb(30, 30, 30); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/breads.avif" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Indian Breads</h2>
+                                <p class="card-text">Soft and fluffy naan bread, perfect for dipping</p>
+                                <button class="btn btn-warning btn-block"><a href="indian_bread.html" style="color: rgb(31, 31, 31); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/kebabs.jpg" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Kababs</h2>
+                                <p class="card-text">Spicy lamb kababs with a cooling yogurt sauce</p>
+                                <button class="btn btn-warning btn-block"><a href="kababs.html" style="color: rgb(32, 32, 32); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="card">
+                            <img src="photos/panneer rool.avif" class="card-img-top"/>
+                            <div class="card-body">
+                                <h2 class="card-title">Rolls</h2>
+                                <p class="card-text">Crispy spring rolls filled with fresh vegetables</p>
+                                <button class="btn btn-warning btn-block"><a href="kebabs.jpg" style="color: rgb(33, 33, 33); text-decoration: none;">Explore</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+                    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+       
+        document.addEventListener('DOMContentLoaded', function() {
+            let cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (isInViewport(card)) {
+                    card.classList.add('fade-in');
+                }
+            });
+            window.addEventListener('scroll', function() {
+                cards.forEach(card => {
+                    if (isInViewport(card)) {
+                        card.classList.add('fade-in');
+                    }
+                });
+            });
+
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+        });
+    </script>
+</body>
+</html>

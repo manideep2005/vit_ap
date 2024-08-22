@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGG Starters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light gray background */
+            background-image: url('https://cdn.jsdelivr.net/gh/saadeghi/daisyui@1.9.0/example/assets/bg-pattern-light.png'); /* Subtle pattern overlay */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* White container background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .starter {
+            background-color: #f9f9f9; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ebb70e; 
+        }
+        p {
+            color: #1c1b1b; 
+        }
+        .circle-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+        }
+        .rupee-icon {
+            font-size: 20px;
+            color: #ebb70e; 
+        }
+        .counter {
+            font-size: 18px;
+            margin: 0 10px;
+            display: none;
+        }
+        .add-btn, .minus-btn, .plus-btn {
+            background-color: #ebb70e;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .add-btn:hover, .minus-btn:hover, .plus-btn:hover {
+            background-color: #d1e714;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-end mt-3 nav-links">
+            <div class="col-auto nav-links" id="searchIcon">
+                <span class="text-primary me-2"><i class="bi bi-search"></i> Search</span>
+            </div>
+            <div class="col-auto">
+                <div class="dropdown">
+                    <span class="text-primary me-2 dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quick Links
+                    </span>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonLight">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="account.html">Account</a></li>
+                        <li><a class="dropdown-item" href="Signin.html">Sign in</a></li>
+                        <li><a class="dropdown-item" href="#">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-bag"></i>Cart </span>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-question"></i> Help</span>
+            </div>
+        </div>
+
+  
+          
+            <h1>Egg Starters</h1>
+            <ul class="starter-list">
+                <li class="starter">
+                    <div>
+                        <h2>Deviled Eggs</h2>
+                        <p>Hard-boiled eggs, halved and filled with a seasoned yolk mixture.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="photos/deviled eggs.jpeg" alt="Deviled Eggs"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Scotch Eggs</h2>
+                        <p>Boiled eggs wrapped in sausage meat, coated in breadcrumbs, and deep-fried or baked.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="photos/scotch-eggs-3.jpg" alt="Scotch Eggs"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Egg Pakora</h2>
+                        <p>Hard-boiled eggs dipped in a spiced chickpea flour batter and deep-fried.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="photos/egg pakora.webp" alt="Egg Pakora"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Spicy Egg Rolls</h2>
+                        <p>Spring rolls filled with a mixture of eggs, vegetables, and spices.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="photos/egg rolls.jpeg" alt="Spicy Egg Rolls"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Masala Omelette Bites</h2>
+                        <p>Small, spiced omelettes cut into bite-sized pieces.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="masala omlette bites.jpeg" alt="Masala Omelette Bites"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Stuffed Eggs</h2>
+                        <p>Hard-boiled eggs halved and filled with various mixtures like tuna, crab, or avocado.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="stuffed eggs.jpeg" alt="Stuffed Eggs"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Egg Chaat</h2>
+                        <p>Hard-boiled eggs topped with a tangy and spicy mixture of onions, tomatoes, coriander, and chutneys.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="egg_chaat.jpeg" alt="Egg Chaat"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Egg Canapés</h2>
+                        <p>Small, decorative appetizers featuring slices of boiled egg on bread or crackers, garnished with toppings like smoked salmon or caviar.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="egg_canapes.jpeg" alt="Egg Canapés"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Egg Salad</h2>
+                        <p>Chopped hard-boiled eggs mixed with mayonnaise, mustard, and various seasonings, often served on crackers or toast.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="egg_salad.jpeg" alt="Egg Salad"> 
+                    </div>
+                </li>
+                <li class="starter">
+                    <div>
+                        <h2>Egg Kebabs</h2>
+                        <p>Minced meat mixed with spices and boiled eggs, shaped onto skewers and grilled.</p>
+                        <div class="rupee-icon"><i class="bi bi-currency-rupee">180</i></div>
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add</button>
+                    </div>
+                    <div>
+                        <img class="circle-img" src="egg_kebabs.jpeg" alt="Egg Kebabs"> 
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </ul>
+    </div>
+        </ul>
+    </div>
+
+    <script>
+        function updateCounter(event, increment) {
+            var parentLi = event.target.closest('.starter');
+            var counterElement = parentLi.querySelector('.counter');
+            var count = parseInt(counterElement.textContent);
+            count += increment;
+            count = Math.max(0, count);
+            counterElement.textContent = count;
+            var addButton = parentLi.querySelector('.add-btn');
+            var minusButton = parentLi.querySelector('.minus-btn');
+            var plusButton = parentLi.querySelector('.plus-btn');
+            if (count > 0) {
+                addButton.style.display = 'none';
+                minusButton.style.display = 'inline-block';
+                plusButton.style.display = 'inline-block';
+                counterElement.style.display = 'inline-block';
+            } else {
+                addButton.style.display = 'inline-block';
+                minusButton.style.display = 'none';
+                plusButton.style.display = 'none';
+                counterElement.style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('.plus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+
+        document.querySelectorAll('.minus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, -1);
+            });
+        });
+
+        document.querySelectorAll('.add-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

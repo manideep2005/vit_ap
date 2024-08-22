@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMK Grocery Store</title>
+    <style>
+       body {
+        background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7f2f2;
+    padding: 20px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+    
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(4, 4, 4);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style footer links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #bbb;
+}
+
+
+footer a:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+footer {
+    box-shadow: 0 -2px 4px rgba(249, 246, 246, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GMK Grocery Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#fresh-produce">Fresh Produce</a></li>
+                <li><a href="#pantry-essentials">Pantry Essentials</a></li>
+                <li><a href="#bakery-delights">Bakery Delights</a></li>
+                <li><a href="#dairy-eggs">Dairy & Eggs</a></li>
+                <li><a href="#meat-seafood">Meat & Seafood</a></li>
+                <li><a href="#beverages">Beverages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fresh-produce" class="section">
+            <section id="fresh-produce" class="section">
+                <h2>Fresh Produce</h2>
+                <div class="product">
+                    <div class="image-container">
+                        <img class="expandable-image" src="brocoli.jpeg" alt="Fresh Broccoli">
+                    </div>
+                    
+                    <h3>Fresh Broccoli</h3>
+                    <p> ₹99 per Kg</p>
+                    
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="tomatos.jpeg" alt="Vine-Ripe Tomatoes">
+                    <h3>Vine-Ripe Tomatoes</h3>
+                    <p> ₹49 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="spinach.webp" alt="Organic Spinach">
+                    <h3>Organic Spinach</h3>
+                    <p>₹ 49 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="carrot.jpeg" alt="Fresh Carrots">
+                    <h3>Fresh Carrots</h3>
+                    <p>₹ 199 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="pepper2.avif" alt="Colorful Bell Peppers">
+                    <h3>Colorful Bell Peppers</h3>
+                    <p>₹ 99 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="lettuce.webp" alt="Crisp Iceberg Lettuce">
+                    <h3>Crisp Iceberg Lettuce</h3>
+                    <p> ₹ 39 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="cucumber.jpeg" alt="Fresh Cucumber">
+                    <h3>Fresh Cucumber</h3>
+                    <p>₹ 39 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+               
+                <div class="product">
+                    <img src="Image.jpeg" alt="Juicy Oranges">
+                    <h3>Juicy Oranges</h3>
+                    <p>₹ 149 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="red grape.jpeg" alt="Sweet Red Grapes">
+                    <h3>Sweet Red Grapes</h3>
+                    <p>₹ 99 per Kg</p>
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add</button>
+                </div>
+            </section>
+            
+        </section>
+
+        <section id="pantry-essentials" class="section">
+            <section id="pantry-essentials" class="section">
+                <h2>Pantry Essentials</h2>
+                <div class="product">
+                    <img src="rice.jpg" alt="Basmati Rice">
+                    <h3>Basmati Rice</h3>
+                    <p>.4.99 per 5 lb</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="pasta.jpg" alt="Spaghetti Pasta">
+                    <h3>Spaghetti Pasta</h3>
+                    <p>.1.49 per 16 oz</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="beans.jpg" alt="Black Beans">
+                    <h3>Black Beans</h3>
+                    <p> ₹120 per Kg</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="canned_tomatoes.jpg" alt="Canned Tomatoes">
+                    <h3>Canned Tomatoes</h3>
+                    <p>.1.29 per 28 oz</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="olive_oil.jpg" alt="Extra Virgin Olive Oil">
+                    <h3>Extra Virgin Olive Oil</h3>
+                    <p>.7.99 per 500 ml</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="flour.jpg" alt="All-Purpose Flour">
+                    <h3>All-Purpose Flour</h3>
+                    <p>.2.49 per 5 lb</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="sugar.jpg" alt="Granulated Sugar">
+                    <h3>Granulated Sugar</h3>
+                    <p>.1.99 per 4 lb</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="cereal.jpg" alt="Breakfast Cereal">
+                    <h3>Breakfast Cereal</h3>
+                    <p>.3.49 per 12 oz</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="peanut_butter.jpg" alt="Peanut Butter">
+                    <h3>Peanut Butter</h3>
+                    <p>.2.99 per 16 oz</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="jam.jpg" alt="Strawberry Jam">
+                    <h3>Strawberry Jam</h3>
+                    <p>.2.49 per 20 oz</p>
+                    <div class="starter">
+                        <button class="minus-btn" style="display:none;">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-btn" style="display:none;">+</button>
+                        <button class="add-btn">Add to cart</button>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+        <section id="bakery-delights" class="section">
+            <h2> bakery products</h2>
+            <div class="product">
+                <img src="chocolate_cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>₹15.99 per cake</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="blueberry_muffins.jpg" alt="Blueberry Muffins">
+                <h3>Blueberry Muffins</h3>
+                <p>₹4.99 per 6-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="french_baguette.jpg" alt="French Baguette">
+                <h3>French Baguette</h3>
+                <p>₹2.49 per loaf</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="croissants.jpg" alt="Croissants">
+                <h3>Butter Croissants</h3>
+                <p>₹5.99 per 4-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="cinnamon_rolls.jpg" alt="Cinnamon Rolls">
+                <h3>Cinnamon Rolls</h3>
+                <p>₹6.99 per 6-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="cheese_danish.jpg" alt="Cheese Danish">
+                <h3>Cheese Danish</h3>
+                <p>₹3.99 each</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="apple_pie.jpg" alt="Apple Pie">
+                <h3>Apple Pie</h3>
+                <p>₹12.99 per pie</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="bagels.jpg" alt="Bagels">
+                <h3>Assorted Bagels</h3>
+                <p>₹4.99 per 6-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="donuts.jpg" alt="Donuts">
+                <h3>Glazed Donuts</h3>
+                <p>₹3.99 per 12-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="banana_bread.jpg" alt="Banana Bread">
+                <h3>Banana Bread</h3>
+                <p>₹7.99 per loaf</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="lemon_tart.jpg" alt="Lemon Tart">
+                <h3>Lemon Tart</h3>
+                <p>₹4.99 each</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="eclairs.jpg" alt="Eclairs">
+                <h3>Chocolate Eclairs</h3>
+                <p>₹6.99 per 4-pack</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <section id="dairy-eggs" class="section">
+            <h2> Diary & Eggs</h2>
+            <div class="product">
+                <img src="istockphoto-120879706-612x612.jpg" alt="Milk">
+                <h3>Organic Whole Milk</h3>
+                <p>₹3.49 per gallon</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="GettyImages-470340853.jpg" alt="Cheese">
+                <h3>Cheddar Cheese</h3>
+                <p>₹5.99 per lb</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__06__20190614-yogurt-vicky-wasik-8-1b8381eea1b44c17ac31879c11e6c624.jpg" alt="Yogurt">
+                <h3>Greek Yogurt</h3>
+                <p>₹1.29 per cup</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="l-intro-1671035381.jpg" alt="Butter">
+                <h3>Salted Butter</h3>
+                <p>₹4.49 per stick</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="whipped-cream-dollop_h3pDJ7I.webp" alt="Cream">
+                <h3>Heavy Cream</h3>
+                <p>₹2.99 per pint</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="sour cream.jpg" alt="Sour Cream">
+                <h3>Sour Cream</h3>
+                <p>₹2.49 per container</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="cottage-cheese-1.webp" alt="Cottage Cheese">
+                <h3>Cottage Cheese</h3>
+                <p>₹3.99 per tub</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="download.jpeg" alt="Ricotta">
+                <h3>Ricotta Cheese</h3>
+                <p>₹4.29 per container</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="keffir.jpeg" alt="Kefir">
+                <h3>Kefir</h3>
+                <p>₹3.99 per quart</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="buttermilk.webp" alt="Buttermilk">
+                <h3>Buttermilk</h3>
+                <p>₹2.89 per quart</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="" alt="Cream Cheese">
+                <h3>Cream Cheese</h3>
+                <p>₹2.99 per block</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="evaporated_milk.jpg" alt="Evaporated Milk">
+                <h3>Evaporated Milk</h3>
+                <p>₹1.99 per can</p>
+                <div class="starter">
+                    <button class="minus-btn" style="display:none;">-</button>
+                    <span class="counter">0</span>
+                    <button class="plus-btn" style="display:none;">+</button>
+                    <button class="add-btn">Add to cart</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="meat-seafood" class="section">
+            <!-- Meat & Seafood content here -->
+        </section>
+
+        <section id="beverages" class="section">
+            <!-- Beverages content here -->
+        </section>
+    </main>
+
+    
+    <script>
+        function updateCounter(event, increment) {
+            var parentLi = event.target.closest('.starter');
+            var counterElement = parentLi.querySelector('.counter');
+            var count = parseInt(counterElement.textContent);
+            count += increment;
+            count = Math.max(0, count);
+            counterElement.textContent = count;
+            var addButton = parentLi.querySelector('.add-btn');
+            var minusButton = parentLi.querySelector('.minus-btn');
+            var plusButton = parentLi.querySelector('.plus-btn');
+            if (count > 0) {
+                addButton.style.display = 'none';
+                minusButton.style.display = 'inline-block';
+                plusButton.style.display = 'inline-block';
+                counterElement.style.display = 'inline-block';
+            } else {
+                addButton.style.display = 'inline-block';
+                minusButton.style.display = 'none';
+                plusButton.style.display = 'none';
+                counterElement.style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('.plus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+
+        document.querySelectorAll('.minus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, -1);
+            });
+        });
+
+        document.querySelectorAll('.add-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="nav-bar">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Team</a>
+            <a href="#">GMK One</a>
+            <a href="#">GMK Instamart</a>
+            <a href="#">GMK Genie</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Help & Support</a>
+            <a href="#">Partner with us</a>
+        </div>
+        <div class="footer">
+            <p>GMK Restaurants and Hotels © 2024. We deliver to 10 cities including Bangalore, Gurgaon, Hyderabad, Delhi, Mumbai, and Pune.</p>
+            <p>
+                <a href="#">Legal</a> |
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Cookie Policy</a> |
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

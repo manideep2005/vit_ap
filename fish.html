@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Starters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40;
+            padding: 0;
+            background-color: #f5f5f5; 
+        }
+        .container {
+            max-width: 5000px;
+            margin:  auto;
+            padding: 20px;
+            background-color: #fff; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 10;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .starter {
+            background-color: #f9f9f9; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        h2 {
+            color: #1f68df; 
+        }
+        p {
+            color: #1c1b1b; 
+        }
+        .add-btn {
+            background-color: #3244df; 
+            border: none;
+            color: white;
+            padding: 10px 17px;
+            text-align: center;
+            text-decoration: none;
+            display: block; /* Change to block */
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .add-btn:hover {
+            background-color: #009bb3;
+        }
+        .circle-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+        }
+        .rupee-icon {
+            font-size: 20px;
+            color:#280eeb; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-end mt-3 nav-links">
+            <div class="col-auto nav-links" id="searchIcon">
+                <span class="text-primary me-2"><i class="bi bi-search"></i> Search</span>
+            </div>
+            <div class="col-auto">
+                <div class="dropdown">
+                    <span class="text-primary me-2 dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quick Links
+                    </span>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonLight">
+                        <li><a class="dropdown-item" href="index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="Signin.html">Sign in</a></li>
+                        <li><a class="dropdown-item" href="loginpage.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-bag"></i>Cart </span>
+            </div>
+            <div class="col-auto nav-links">
+                <span class="text-primary me-2"><i class="bi bi-question"></i> Help</span>
+            </div>
+        </div>
+    </div>
+
+
+  
+    <li class="starter">
+        <div>
+            <h2>Fish Tacos</h2>
+            <p>Grilled or fried fish served in a taco shell with various toppings like salsa, cabbage, and avocado.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">280</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_tacos.jpeg" alt="Fish Tacos"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Crispy Fish Fingers</h2>
+            <p>Thin strips of fish coated in breadcrumbs and deep-fried until crispy and golden brown.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">290</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="crispy_fish_fingers.jpeg" alt="Crispy Fish Fingers"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Fish Cakes</h2>
+            <p>Flaked fish mixed with mashed potatoes, herbs, and spices, formed into patties, and pan-fried until golden.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">290</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_cakes.jpeg" alt="Fish Cakes"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Grilled Salmon</h2>
+            <p>Salmon fillets marinated in herbs, garlic, and lemon juice, then grilled until tender and flaky.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">320</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="grilled_salmon.jpeg" alt="Grilled Salmon"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Smoked Salmon Bruschetta</h2>
+            <p>Toasted bread topped with cream cheese, smoked salmon, and fresh herbs.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">320</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="smoked_salmon_bruschetta.jpeg" alt="Smoked Salmon Bruschetta"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Fish Pakora</h2>
+            <p>Fish fillets dipped in a spiced chickpea flour batter and deep-fried until crispy.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">320</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_pakora.jpeg" alt="Fish Pakora"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Seafood Skewers</h2>
+            <p>Assorted seafood like shrimp, fish, and scallops marinated and grilled on skewers.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">320</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="seafood_skewers.jpeg" alt="Seafood Skewers"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Fish Spring Rolls</h2>
+            <p>Fish and vegetable filling wrapped in thin pastry sheets and deep-fried until crispy.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">380</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_spring_rolls.jpeg" alt="Fish Spring Rolls"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Fish Croquettes</h2>
+            <p>Mashed fish mixed with potatoes, spices, and herbs, shaped into cylinders, breaded, and deep-fried.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">380</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_croquettes.jpeg" alt="Fish Croquettes"> 
+        </div>
+    </li>
+    
+    <li class="starter">
+        <div>
+            <h2>Fish Cutlets</h2>
+            <p>Fish fillets mixed with mashed potatoes, spices, and herbs, shaped into patties, breaded, and shallow-fried until golden.</p>
+            <div class="rupee-icon"><i class="bi bi-currency-rupee">323</i></div>
+            <button class="add-btn">Add</button>
+        </div>
+    
+        <div>
+            <img class="circle-img" src="fish_cutlets.jpeg" alt="Fish Cutlets"> 
+        </div>
+    </li>
+    
+    
+   
+                
+      
+        </ul>
+    </div>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function updateCounter(event, increment) {
+            var parentLi = event.target.closest('.starter');
+            var counterElement = parentLi.querySelector('.counter');
+            var count = parseInt(counterElement.textContent);
+            count += increment;
+            count = Math.max(0, count);
+            counterElement.textContent = count;
+            var addButton = parentLi.querySelector('.add-btn');
+            var minusButton = parentLi.querySelector('.minus-btn');
+            var plusButton = parentLi.querySelector('.plus-btn');
+            if (count > 0) {
+                addButton.style.display = 'none';
+                minusButton.style.display = 'inline-block';
+                plusButton.style.display = 'inline-block';
+                counterElement.style.display = 'inline-block';
+            } else {
+                addButton.style.display = 'inline-block';
+                minusButton.style.display = 'none';
+                plusButton.style.display = 'none';
+                counterElement.style.display = 'none';
+            }
+        }
+
+        document.querySelectorAll('.plus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+
+        document.querySelectorAll('.minus-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, -1);
+            });
+        });
+
+        document.querySelectorAll('.add-btn').forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                updateCounter(event, 1);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

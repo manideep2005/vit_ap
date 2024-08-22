@@ -1,0 +1,120 @@
+.container-fluid {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.section-title {
+    color: #f39c12;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #f39c12;
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reserve-btn {
+    background-color: #f39c12;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.section-image {
+    flex: 1;
+  position: relative; /* Required for absolute positioning of heading */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.text-container {
+    padding: 40px;
+}
+
+/* Popup Form Styling */
+.popup-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    background-color: #302d2d;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-content h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #f39c12;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-content label {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-content input[type="text"],
+.form-content input[type="email"],
+.form-content input[type="tel"],
+.form-content input[type="date"],
+.form-content input[type="time"],
+.form-content input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #f39c12;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
